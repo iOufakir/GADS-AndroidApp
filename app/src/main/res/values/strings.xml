@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">GADSApp</string>
     <string name="learning_leaders">Learning Leaders</string>
-    <string name="leaderboard">Leaderboard</string>
+    <string name="leaderboard">LEADERBOARD</string>
+    <string name="submit">Submit</string>
 </resources>

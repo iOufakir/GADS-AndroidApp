@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp">
 
 
     <androidx.cardview.widget.CardView
@@ -35,7 +36,7 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="18dp"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="@+id/imgBadge"
                 app:layout_constraintLeft_toRightOf="@id/imgBadge"
@@ -45,10 +46,10 @@
                     android:id="@+id/text_fullName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="6dp"
+                    android:layout_marginBottom="5dp"
                     android:text="Kojo Yebon"
                     android:textAppearance="@android:style/TextAppearance.Material.Medium"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView

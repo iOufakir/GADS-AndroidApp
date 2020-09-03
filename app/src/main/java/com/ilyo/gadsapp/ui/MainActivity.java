@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tabs);
         new TabLayoutMediator(tabLayout, viewPager,
                 (tab, position) -> {
-                    if(position == 1){
+                    if(position == 0){
                         tab.setText("Learning Leaders");
                     }else{
                         tab.setText("Skill IQ Leaders");

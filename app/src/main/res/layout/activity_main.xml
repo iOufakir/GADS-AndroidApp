@@ -11,19 +11,45 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        app:title="@string/leaderboard"
-        app:titleTextColor="@android:color/white"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/leaderboard"
+        app:titleTextAppearance="@android:style/TextAppearance.Material.Title"
+        app:titleTextColor="@android:color/white">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toolbar_overflow_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:minHeight="4dp"
+            android:paddingStart="28dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="2dp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            app:backgroundTint="@color/colorAccent"
+            app:cornerRadius="16dp"
+            tools:layout_editor_absoluteX="291dp"
+            tools:layout_editor_absoluteY="11dp" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:clipToPadding="true"
+        app:tabIndicatorColor="@color/colorAccent"
+        android:clipToPadding="false"
+        android:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
