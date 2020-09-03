@@ -1,10 +1,24 @@
-package com.ilyo.gadsapp.api.model;
+package com.ilyo.gadsapp.model;
+
+import com.google.gson.annotations.SerializedName;
 
 public class Learner {
+
+    @SerializedName("name")
     private String name;
+
+    @SerializedName("hours")
     private int hours;
+
+    @SerializedName("country")
     private String country;
+
+    @SerializedName("badgeUrl")
     private String badgeUrlImage;
+
+    // For skillful people
+    @SerializedName("score")
+    private int score;
 
     public String getName() {
         return name;
@@ -36,5 +50,13 @@ public class Learner {
 
     public void setBadgeUrlImage(String badgeUrlImage) {
         this.badgeUrlImage = badgeUrlImage;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 }
