@@ -78,7 +78,7 @@ public class LeaderBoardFragment extends Fragment {
 
     public void getLearnersByHours() {
         // Build service
-        GadsService gadsService = ServiceBuilder.buildService(GadsService.class);
+        GadsService gadsService = ServiceBuilder.getInstance(ServiceBuilder.BASE_URL).buildService(GadsService.class);
         Call<List<Learner>> call = gadsService.getLearnersByHours();
         // Invoke api call
         call.enqueue(new Callback<List<Learner>>() {
@@ -93,12 +93,11 @@ public class LeaderBoardFragment extends Fragment {
                 Toast.makeText(context, "Network error: " + t.getCause(), Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
     public void getLearnersBySkills() {
         // Build service
-        GadsService gadsService = ServiceBuilder.buildService(GadsService.class);
+        GadsService gadsService = ServiceBuilder.getInstance(ServiceBuilder.BASE_URL).buildService(GadsService.class);
         Call<List<Learner>> call = gadsService.getLearnersBySkills();
         // Invoke api call
         call.enqueue(new Callback<List<Learner>>() {
