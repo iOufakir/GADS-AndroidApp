@@ -13,7 +13,7 @@ public class ServiceBuilder {
             .build();
 
     // use generic class to build our different services
-    public static <S> S buildService(Class<S> serviceType){
+    public static <S> S buildService(Class<S> serviceType) {
         return retrofit.create(serviceType);
     }
 }

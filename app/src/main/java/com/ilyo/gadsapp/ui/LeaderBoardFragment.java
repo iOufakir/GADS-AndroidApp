@@ -33,7 +33,7 @@ public class LeaderBoardFragment extends Fragment {
     private Context context;
     private Integer position;
 
-    public LeaderBoardFragment(Integer position){
+    public LeaderBoardFragment(Integer position) {
         this.position = position;
     }
 
@@ -58,9 +58,9 @@ public class LeaderBoardFragment extends Fragment {
         initViews(view);
 
         // Display data
-        if(position == 0){
+        if (position == 0) {
             getLearnersByHours();
-        }else {
+        } else {
             getLearnersBySkills();
         }
     }
@@ -76,7 +76,7 @@ public class LeaderBoardFragment extends Fragment {
         recyclerViewLearners.setAdapter(adapter);
     }
 
-    public void getLearnersByHours(){
+    public void getLearnersByHours() {
         // Build service
         GadsService gadsService = ServiceBuilder.buildService(GadsService.class);
         Call<List<Learner>> call = gadsService.getLearnersByHours();
@@ -96,7 +96,7 @@ public class LeaderBoardFragment extends Fragment {
 
     }
 
-    public void getLearnersBySkills(){
+    public void getLearnersBySkills() {
         // Build service
         GadsService gadsService = ServiceBuilder.buildService(GadsService.class);
         Call<List<Learner>> call = gadsService.getLearnersBySkills();

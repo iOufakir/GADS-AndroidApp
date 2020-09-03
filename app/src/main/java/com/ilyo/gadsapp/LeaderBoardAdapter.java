@@ -42,11 +42,11 @@ public class LeaderBoardAdapter extends RecyclerView.Adapter<LeaderBoardAdapter.
         Learner learner = listLearners.get(position);
 
         StringBuilder textDetail = new StringBuilder();
-        if(learner.getScore() != 0){
+        if (learner.getScore() != 0) {
             textDetail.append(learner.getScore())
                     .append(" skill IQ Score, ")
                     .append(learner.getCountry());
-        }else{
+        } else {
             textDetail.append(learner.getHours())
                     .append(" learning hours, ")
                     .append(learner.getCountry())
