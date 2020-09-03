@@ -1,5 +1,5 @@
 # GADS-AndroidApp
-GADS Android app sample using Java 8, Retrofit, Picasso, ViewPager2, and custom views.
+GADS Android app using Java 8, Retrofit, Picasso, ViewPager2, and custom views.
 
 
 First  | Second  | Third 
