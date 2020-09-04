@@ -1,6 +1,10 @@
-# GADS-AndroidApp
-GADS Android app using Java 8, Retrofit, Picasso, ViewPager2, and custom views.
+# Building a GADS Leaderboard Mobile Application
 
+Associate Android Developer Practice Project
+
+The Application makes use of using Java 8, Retrofit, Picasso, ViewPager2, and custom views.
+
+# Screenshots 
 
 First  | Second  | Third 
 ------------ | ------------- | ------------- 
