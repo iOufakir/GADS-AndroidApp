@@ -2,7 +2,7 @@
 
 Associate Android Developer Practice Project
 
-The Application makes use of using Java 8, Retrofit, Picasso, ViewPager2, and custom views.
+The Application makes use of Java 8, Retrofit, Picasso, ViewPager2, with custom views.
 
 # Screenshots 
 
